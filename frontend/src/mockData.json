@@ -1,0 +1,496 @@
+{
+  "kpis": {
+    "waste_prevented": {
+      "value": "142kg",
+      "delta": "+18.4%",
+      "subtext": "vs last week average"
+    },
+    "stockouts_avoided": {
+      "value": "34 SKUs",
+      "badge": "99.1% service",
+      "subtext": "Zero critical stockout incidents"
+    },
+    "margin_saved": {
+      "value": "$2,450",
+      "delta": "+$380 today",
+      "subtext": "Dynamic markdowns vs dump loss"
+    },
+    "active_spoilage_alerts": {
+      "pending": 12,
+      "critical": 4,
+      "subtext": "12 Pending · 4 Critical"
+    }
+  },
+  "alerts": [
+    {
+      "id": "ALT-1001",
+      "store": "Store_1_HYD",
+      "store_name": "Banjara Hills Flagship",
+      "sku": "MILK_500ML",
+      "item_name": "Organic Whole Milk 500ml",
+      "cat": "DAIRY",
+      "stock": 80,
+      "fcst": 30,
+      "days_left": "1/3d",
+      "risk_score": 85,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 25% OFF",
+      "discount_pct": 25,
+      "original_price": 2.40,
+      "markdown_price": 1.80,
+      "margin_saved": 120.00,
+      "waste_avoided_kg": 22.5,
+      "confidence": 92,
+      "batch_id": "LOT-DAIRY-882",
+      "signals": [
+        {
+          "agent": "Weather Agent",
+          "headline": "38°C High Heat in Hyderabad",
+          "detail": "Cold chain stress probability elevated by 24%. Accelerated perishability curve."
+        },
+        {
+          "agent": "Price Elasticity Agent",
+          "headline": "+140% Sales Velocity Shift",
+          "detail": "25% discount shifts daily velocity from 30 to 76 units, clearing stock before evening cutoff."
+        },
+        {
+          "agent": "Inventory & IoT Agent",
+          "headline": "IoT Chiller Temp: 3.8°C",
+          "detail": "Shelf-life decay curve shows critical sensory drop in 28 hours."
+        },
+        {
+          "agent": "Footfall Agent",
+          "headline": "Peak Footfall Window: 6 PM - 9 PM",
+          "detail": "Evening commuter wave represents 65% of daily milk SKU turnover."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1002",
+      "store": "Store_2_HYD",
+      "store_name": "Hitec City Tech Park",
+      "sku": "BANANA_1KG",
+      "item_name": "Robusta Banana Premium 1kg",
+      "cat": "PRODUCE",
+      "stock": 15,
+      "fcst": 55,
+      "days_left": "3/5d",
+      "risk_score": 72,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 20% OFF",
+      "discount_pct": 20,
+      "original_price": 1.50,
+      "markdown_price": 1.20,
+      "margin_saved": 45.00,
+      "waste_avoided_kg": 15.0,
+      "confidence": 88,
+      "batch_id": "LOT-PRD-401",
+      "signals": [
+        {
+          "agent": "Ripening Vision AI",
+          "headline": "Stage 5 Yellow Browning detected",
+          "detail": "Visual inspection shows spot density at 18%, recommend immediate display fronting."
+        },
+        {
+          "agent": "Price Elasticity Agent",
+          "headline": "+95% Lift at 20% Markdown",
+          "detail": "Smoothie bundle promo drives cross-sell with Greek Yogurt."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1003",
+      "store": "Store_1_HYD",
+      "store_name": "Banjara Hills Flagship",
+      "sku": "BREAD_400G",
+      "item_name": "Artisan Sourdough Loaf 400g",
+      "cat": "BAKERY",
+      "stock": 60,
+      "fcst": 25,
+      "days_left": "1/4d",
+      "risk_score": 78,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 30% OFF + Flash Bundle",
+      "discount_pct": 30,
+      "original_price": 3.80,
+      "markdown_price": 2.66,
+      "margin_saved": 88.50,
+      "waste_avoided_kg": 18.0,
+      "confidence": 94,
+      "batch_id": "LOT-BKR-902",
+      "signals": [
+        {
+          "agent": "Demand Forecast Agent",
+          "headline": "Forecast Deficit: 35 Loaves",
+          "detail": "Current sell-through rate 1.2 units/hr, target rate required 3.8 units/hr."
+        },
+        {
+          "agent": "Cross-Merchandising Agent",
+          "headline": "Pairing Suggestion: Gouda Cheese",
+          "detail": "POS prompt rule pushes bread discount when gourmet cheese added to basket."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1004",
+      "store": "Store_3_HYD",
+      "store_name": "Jubilee Hills Metro",
+      "sku": "CHICKEN_1KG",
+      "item_name": "Fresh Farm Whole Chicken 1kg",
+      "cat": "MEAT",
+      "stock": 5,
+      "fcst": 40,
+      "days_left": "2/2d",
+      "risk_score": 91,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Flash Markdown 40% OFF",
+      "discount_pct": 40,
+      "original_price": 6.50,
+      "markdown_price": 3.90,
+      "margin_saved": 165.00,
+      "waste_avoided_kg": 32.0,
+      "confidence": 96,
+      "batch_id": "LOT-MET-119",
+      "signals": [
+        {
+          "agent": "Safety & Expiry Agent",
+          "headline": "Strict Cutoff: 18:00 Today",
+          "detail": "HACCP compliance requires transfer or markdown clearance within 4.5 hours."
+        },
+        {
+          "agent": "Price Elasticity Agent",
+          "headline": "Maximum Clearance Speed",
+          "detail": "At 40% off, clearance rate surges to 12.5 packs/hr based on historical weekend demand."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1005",
+      "store": "Store_2_HYD",
+      "store_name": "Hitec City Tech Park",
+      "sku": "YOGURT_400G",
+      "item_name": "Greek Style Plain Yogurt 400g",
+      "cat": "DAIRY",
+      "stock": 45,
+      "fcst": 20,
+      "days_left": "2/4d",
+      "risk_score": 74,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 15% OFF",
+      "discount_pct": 15,
+      "original_price": 3.20,
+      "markdown_price": 2.72,
+      "margin_saved": 54.00,
+      "waste_avoided_kg": 14.2,
+      "confidence": 89,
+      "batch_id": "LOT-DRY-330",
+      "signals": [
+        {
+          "agent": "Cross-Sell Agent",
+          "headline": "Healthy Breakfast Cluster",
+          "detail": "High synergy with Berries and Granola inventory."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1006",
+      "store": "Store_1_HYD",
+      "store_name": "Banjara Hills Flagship",
+      "sku": "STRAWBERRY_250G",
+      "item_name": "Fresh Sweet Strawberries 250g",
+      "cat": "PRODUCE",
+      "stock": 38,
+      "fcst": 12,
+      "days_left": "1/2d",
+      "risk_score": 88,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 35% OFF",
+      "discount_pct": 35,
+      "original_price": 4.50,
+      "markdown_price": 2.92,
+      "margin_saved": 92.00,
+      "waste_avoided_kg": 9.5,
+      "confidence": 95,
+      "batch_id": "LOT-BER-102",
+      "signals": [
+        {
+          "agent": "Quality Degradation AI",
+          "headline": "Skin softness metric 3.2/5",
+          "detail": "High humidity index in ambient bay. Accelerated sale recommended."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1007",
+      "store": "Store_4_HYD",
+      "store_name": "Gachibowli Express",
+      "sku": "SALMON_FILLET",
+      "item_name": "Atlantic Salmon Portions 300g",
+      "cat": "SEAFOOD",
+      "stock": 22,
+      "fcst": 8,
+      "days_left": "1/2d",
+      "risk_score": 86,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Markdown 30% + App Push Alert",
+      "discount_pct": 30,
+      "original_price": 12.00,
+      "markdown_price": 8.40,
+      "margin_saved": 210.00,
+      "waste_avoided_kg": 6.6,
+      "confidence": 93,
+      "batch_id": "LOT-SEA-505",
+      "signals": [
+        {
+          "agent": "Customer Loyalty Agent",
+          "headline": "Target 420 High-Value Seafood Buyers",
+          "detail": "Push notification targeted to app members within 3km radius."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1008",
+      "store": "Store_3_HYD",
+      "store_name": "Jubilee Hills Metro",
+      "sku": "SPINACH_BUNCH",
+      "item_name": "Organic Tender Baby Spinach 200g",
+      "cat": "PRODUCE",
+      "stock": 50,
+      "fcst": 18,
+      "days_left": "1/3d",
+      "risk_score": 79,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 25% OFF",
+      "discount_pct": 25,
+      "original_price": 2.00,
+      "markdown_price": 1.50,
+      "margin_saved": 35.00,
+      "waste_avoided_kg": 10.0,
+      "confidence": 91,
+      "batch_id": "LOT-PRD-773",
+      "signals": [
+        {
+          "agent": "Moisture Sensor Agent",
+          "headline": "Misting frequency reduced",
+          "detail": "Recommend moving to rapid clearance shelf."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1009",
+      "store": "Store_1_HYD",
+      "store_name": "Banjara Hills Flagship",
+      "sku": "PANEER_200G",
+      "item_name": "Fresh Malai Paneer Block 200g",
+      "cat": "DAIRY",
+      "stock": 40,
+      "fcst": 15,
+      "days_left": "2/3d",
+      "risk_score": 71,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 20% OFF",
+      "discount_pct": 20,
+      "original_price": 2.80,
+      "markdown_price": 2.24,
+      "margin_saved": 62.00,
+      "waste_avoided_kg": 8.0,
+      "confidence": 87,
+      "batch_id": "LOT-DRY-991",
+      "signals": [
+        {
+          "agent": "Recipe Recommendation Agent",
+          "headline": "Evening Curry Kit Bundle",
+          "detail": "Pairs with Butter Masala simmer sauce promos."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1010",
+      "store": "Store_2_HYD",
+      "store_name": "Hitec City Tech Park",
+      "sku": "CROISSANT_4PK",
+      "item_name": "Butter French Croissants 4-Pack",
+      "cat": "BAKERY",
+      "stock": 28,
+      "fcst": 10,
+      "days_left": "1/2d",
+      "risk_score": 83,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Markdown 30% OFF (Coffee Combo)",
+      "discount_pct": 30,
+      "original_price": 4.20,
+      "markdown_price": 2.94,
+      "margin_saved": 58.00,
+      "waste_avoided_kg": 7.2,
+      "confidence": 90,
+      "batch_id": "LOT-BKR-412",
+      "signals": [
+        {
+          "agent": "Café Kiosk Agent",
+          "headline": "Bundle with Flat White at $4.99",
+          "detail": "Clearance forecast indicates 100% stockout before 4 PM."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1011",
+      "store": "Store_4_HYD",
+      "store_name": "Gachibowli Express",
+      "sku": "TOMATOES_VINE_1KG",
+      "item_name": "Hydroponic Vine Tomatoes 1kg",
+      "cat": "PRODUCE",
+      "stock": 42,
+      "fcst": 22,
+      "days_left": "3/6d",
+      "risk_score": 64,
+      "urgency": "Medium",
+      "status": "Pending",
+      "recommended_action": "Markdown 15% OFF",
+      "discount_pct": 15,
+      "original_price": 3.00,
+      "markdown_price": 2.55,
+      "margin_saved": 40.00,
+      "waste_avoided_kg": 16.0,
+      "confidence": 84,
+      "batch_id": "LOT-PRD-810",
+      "signals": [
+        {
+          "agent": "Supply Inflow Agent",
+          "headline": "New crate arriving tomorrow morning",
+          "detail": "Clear existing batch to prevent shelf congestion."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1012",
+      "store": "Store_3_HYD",
+      "store_name": "Jubilee Hills Metro",
+      "sku": "EGGS_ORGANIC_12PK",
+      "item_name": "Pasture-Raised Brown Eggs 12ct",
+      "cat": "DAIRY",
+      "stock": 35,
+      "fcst": 14,
+      "days_left": "3/7d",
+      "risk_score": 67,
+      "urgency": "Medium",
+      "status": "Pending",
+      "recommended_action": "Markdown 15% OFF",
+      "discount_pct": 15,
+      "original_price": 5.20,
+      "markdown_price": 4.42,
+      "margin_saved": 52.00,
+      "waste_avoided_kg": 12.0,
+      "confidence": 86,
+      "batch_id": "LOT-EGG-203",
+      "signals": [
+        {
+          "agent": "Baking Seasonality Agent",
+          "headline": "Weekend baking uptick anticipated",
+          "detail": "Moderate markdown captures early weekend shoppers."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1013",
+      "store": "Store_1_HYD",
+      "store_name": "Banjara Hills Flagship",
+      "sku": "MINCED_BEEF_500G",
+      "item_name": "Premium Lean Beef Mince 500g",
+      "cat": "MEAT",
+      "stock": 18,
+      "fcst": 6,
+      "days_left": "1/2d",
+      "risk_score": 89,
+      "urgency": "Critical",
+      "status": "Pending",
+      "recommended_action": "Flash Markdown 35% OFF",
+      "discount_pct": 35,
+      "original_price": 7.00,
+      "markdown_price": 4.55,
+      "margin_saved": 95.00,
+      "waste_avoided_kg": 9.0,
+      "confidence": 94,
+      "batch_id": "LOT-MET-662",
+      "signals": [
+        {
+          "agent": "Cold Storage Sensor",
+          "headline": "Cold room humidity optimal",
+          "detail": "Expiration countdown under 18 hours."
+        }
+      ]
+    },
+    {
+      "id": "ALT-1014",
+      "store": "Store_2_HYD",
+      "store_name": "Hitec City Tech Park",
+      "sku": "AVOCADO_HASS_2PK",
+      "item_name": "Ready-to-Eat Hass Avocado 2ct",
+      "cat": "PRODUCE",
+      "stock": 30,
+      "fcst": 12,
+      "days_left": "1/2d",
+      "risk_score": 82,
+      "urgency": "High",
+      "status": "Pending",
+      "recommended_action": "Dynamic Markdown 25% OFF",
+      "discount_pct": 25,
+      "original_price": 4.00,
+      "markdown_price": 3.00,
+      "margin_saved": 48.00,
+      "waste_avoided_kg": 7.5,
+      "confidence": 91,
+      "batch_id": "LOT-PRD-339",
+      "signals": [
+        {
+          "agent": "Firmness Spectrometry Agent",
+          "headline": "Optimal ripeness window expires today",
+          "detail": "High demand among lunch-hour salad buyers."
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "id": "LOG-5001",
+      "timestamp": "2025-05-18T10:42:15Z",
+      "agent": "Weather & Ingestion Agent",
+      "event": "HYD Weather Station Sync",
+      "details": "Temperature peak 38°C detected. Alerted spoilage risk for Store_1_HYD dairy bay.",
+      "level": "INFO"
+    },
+    {
+      "id": "LOG-5002",
+      "timestamp": "2025-05-18T10:44:02Z",
+      "agent": "Price Elasticity Agent",
+      "event": "Optimal Markdown Simulation",
+      "details": "Calculated +140% elasticity curve for MILK_500ML. Suggested markdown: 25% OFF.",
+      "level": "SUCCESS"
+    },
+    {
+      "id": "LOG-5003",
+      "timestamp": "2025-05-18T10:45:30Z",
+      "agent": "Multi-Agent Consensus Orchestrator",
+      "event": "Action Generation ALT-1001",
+      "details": "Confidence score 92%. Proposed to planner queue.",
+      "level": "SUCCESS"
+    },
+    {
+      "id": "LOG-5004",
+      "timestamp": "2025-05-18T10:50:11Z",
+      "agent": "ERP/POS Integration Agent",
+      "event": "ESL Electronic Shelf Label Pre-check",
+      "details": "Connected to Store_1_HYD Zigbee gateway. 14 tags ready for price push.",
+      "level": "INFO"
+    }
+  ]
+}

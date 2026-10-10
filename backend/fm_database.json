@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "name": "Ananya Reddy",
+      "email": "ananya@freshmind.ai",
+      "mobile": "+91 98765 43210",
+      "password_hash": "d3ad9315b7be5dd53b31a273b3b3aba5defe700808305aa16a3062b76658a791",
+      "store_id": "Store_1_HYD",
+      "role": "Perishables Planner",
+      "created_at": "2025-05-10T09:00:00Z",
+      "last_login": "2025-05-18T08:30:00Z",
+      "login_count": 14
+    },
+    {
+      "id": "22222222-3333-4444-5555-666666666666",
+      "name": "Vikram Rao",
+      "email": "vikram@freshmind.ai",
+      "mobile": "+91 98111 22334",
+      "password_hash": "d3ad9315b7be5dd53b31a273b3b3aba5defe700808305aa16a3062b76658a791",
+      "store_id": "Store_2_HYD",
+      "role": "Store Ops Lead",
+      "created_at": "2025-05-12T11:15:00Z",
+      "last_login": "2025-05-18T07:15:00Z",
+      "login_count": 8
+    },
+    {
+      "id": "33333333-4444-5555-6666-777777777777",
+      "name": "Kavitha Sharma",
+      "email": "kavitha@freshmind.ai",
+      "mobile": "+91 97222 33445",
+      "password_hash": "d3ad9315b7be5dd53b31a273b3b3aba5defe700808305aa16a3062b76658a791",
+      "store_id": "Store_3_HYD",
+      "role": "Regional Category Manager",
+      "created_at": "2025-05-14T14:20:00Z",
+      "last_login": "2025-05-17T18:40:00Z",
+      "login_count": 6
+    },
+    {
+      "id": "e7241394-4d3c-4176-aedb-08863916893c",
+      "name": "Rajesh Kumar",
+      "email": "rajesh@freshmind.ai",
+      "mobile": "+91 99887 76655",
+      "password_hash": "dda69783f28fdf6f1c5a83e8400f2472e9300887d1dffffe12a07b92a3d0aa25",
+      "store_id": "Store_1_HYD",
+      "role": "Perishables Planner",
+      "created_at": "2026-10-10T11:37:16.133216",
+      "last_login": "2026-10-10T11:38:44.372221",
+      "login_count": 2
+    }
+  ],
+  "logs": [
+    {
+      "id": "f9552096-e477-4d72-8876-5567a84d5307",
+      "user_email": "ananya@freshmind.ai",
+      "action": "APPROVE",
+      "alert_id": "ALT-1001",
+      "details": {
+        "action": "approve",
+        "markdown_pct": 25,
+        "reason": "Audit test"
+      },
+      "created_at": "2026-10-10T11:50:38.973437"
+    },
+    {
+      "id": "4e935b8a-8c3f-4fa6-ab6f-01be985e774f",
+      "user_email": "rajesh@freshmind.ai",
+      "action": "LOGIN",
+      "alert_id": null,
+      "details": {
+        "client": "FreshMind Web",
+        "store": "Store_1_HYD"
+      },
+      "created_at": "2026-10-10T11:38:44.372221"
+    },
+    {
+      "id": "6a773ac3-c39d-47ed-ae7b-3260b9d1d63a",
+      "user_email": "rajesh@freshmind.ai",
+      "action": "SIGNUP",
+      "alert_id": null,
+      "details": {
+        "store": "Store_1_HYD",
+        "name": "Rajesh Kumar"
+      },
+      "created_at": "2026-10-10T11:37:16.133216"
+    },
+    {
+      "id": "00000001-aaaa-bbbb-cccc-000000000001",
+      "user_email": "ananya@freshmind.ai",
+      "action": "LOGIN",
+      "alert_id": null,
+      "details": {
+        "client": "FreshMind Web",
+        "store": "Store_1_HYD"
+      },
+      "created_at": "2025-05-18T08:30:00Z"
+    },
+    {
+      "id": "00000002-aaaa-bbbb-cccc-000000000002",
+      "user_email": "ananya@freshmind.ai",
+      "action": "APPROVE",
+      "alert_id": "ALT-1001",
+      "details": {
+        "action": "Dynamic Markdown 25% OFF",
+        "synced": "ERP/WMS/POS/ESL"
+      },
+      "created_at": "2025-05-18T09:12:00Z"
+    }
+  ]
+}
